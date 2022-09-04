@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+%\definecolor{gray}{RGB}{192,192,192}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{sumAlice}{SumAlice}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 1 Problem Set}\\
+Due on Monday, September 4th.
+\end{center}
+
+\begin{enumerate}
+\item Windred consumes only apples ($a$) and bananas ($b$). He prefers more apples to fewer, but he gets tired of bananas. If he consumes fewer than 24 bananas per week, he thinks that 1 banana is a perfect substitute for 1 apple. But you would have to pay him 1 apple for each banana beyond 24 that he consumes. For example, Windred is indifferent among $(1,23)$, $(0,24)$, and $(1,25)$. In each of the following problems, determine $x$ that makes Windred indifferent between the two given consumption bundle and provide a brief explanation.
+    \begin{enumerate}
+        \item $(13,23)\sim (x,0)$
+        \item $(40,40)\sim (x,0)$
+        \item $(31,36)\sim (x,18)$
+    \end{enumerate}
+
+\item Alice Granola consumes only avocados $(x_{1})$ and grapefruits $(x_{2})$ and never gets tired of them (i.e., she always prefers to have more of each good). If we graph Alice Granola’s indifference curves with avocados on the horizontal axis and grapefruits on the vertical axis, then whenever she has more grapefruits than avocados, the (absolute value of) slope of her indifference curve is 2. Whenever she has more avocados than grapefruits, the (absolute value of) slope is 1/3. Determine whether each of the following statements is true or false, and provide a brief explanation.
+    \begin{enumerate}
+        \item Alice would prefer $(9,12)$ to $(12,9)$.
+        \item Alice would be indifferent between $(14,20)$ and $(22,14)$.
+        \item Alice's preferences are convex.
+    \end{enumerate}
+
+\item Suppose Jenny lives for two periods, today (young) and tomorrow (old). Let $c_{1}$ denote her consumption today and $c_{2}$ denote her consumption tomorrow. Also, let $m_{1}$ denote her income today and $m_{2}$ denote her income tomorrow.
+    \begin{enumerate}
+        \item Suppose that the interest rate for \emph{savings} is given by $r_{S}$ (i.e., if she saves \$x today then she will get back \$$(1+r_{S})x$ tomorrow). Compute the maximum amount Jenny can consume tomorrow.
+
+        \item Suppose that the interest rate for \emph{borrowing} is given by $r_{B}$ (i.e., if she borrows \$x today then she has to pay back \$$(1+r_{B})x$ tomorrow). Compute the maximum amount Jenny can consume today.
+
+        \item Suppose $r_{S}\leq r_{B}$ (as is typically the case). In this case, Jenny's budget (or choice) set can be represented by two mathematical inequalities. Find those two inequalities. Note that the budget line crosses the points in (a) and (b) as well as the endowment $(m_{1},m_{2})$. (It will help if you draw the budget line to understand the structure of the budget set.)
+    \end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
+
