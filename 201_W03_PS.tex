@@ -136,7 +136,7 @@ Sunday, September 11th.
                 \item First Order Operation\\
                 $\frac{\partial L}{\partial x_1} = 1 - 4x_1 \lambda = 0$\\
                 $\frac{\partial L}{\partial x_2} = 1 - 2x_2 \lambda = 0$
-                \item $\lambda \frac{\partial L}{\lambda} = \lambda (54-(2x_1)^2 - (x_2)^2 = 0$
+                \item $\lambda \frac{\partial L}{\partial \lambda} = \lambda (54-(2x_1)^2 - (x_2)^2 = 0$
                 \item $\frac{1}{4x_1} = \lambda$; $\frac{1}{2x_2}=\lambda$\\
                 $\frac{4x_1}{2x_2} = \frac{1}{1} \rightarrow \fbox{2x_1 = x_2}$
                 \item $(2x_1)^2 + 2(x_1)^2 \geq 54$\\
@@ -180,15 +180,15 @@ Sunday, September 11th.
             \begin{enumerate}
                 \item If $\lambda_1 = \lambda_2 = 0$\\
                 x and y would = 0 
-                \item $2(0) + 0 \geq 200$ and $0 +3(0) \geq 300$
-                \item Since both constraints binded under the condition $x_1 = \lambda_2 = 0$, it is possible that $\lambda_1 = \lambda = 0$ is Victor's optimal choice
+                \item $2(0) + 0 \leq 200$ and $0 +3(0) \leq 300$
+                \item Since both constraints binded under the condition $\lambda_1 = \lambda_2 = 0$, it is possible that $\lambda_1 = \lambda_2 = 0$ is Victor's optimal choice
             \end{enumerate}
 
         \item What about $\lambda_{1}>0$ and $\lambda_{2}=0$? Given this information, find $x$, $y$, and $\lambda_{1}$---by solving the system of equations from the first-order condition---and check whether the solution satisfies the second constraint $x+3y\leq 300$.
         
             \begin{enumerate}
                 \item If $\lambda_1 > 0$ and $\lambda_2 = 0$
-                \item $y = 2\lambda_1$; $x = \lamba_1$; $\frac{x}{y} = \frac{\lambda_1}{2\lambda_1} = \frac{1}{2}$\\
+                \item $y = 2\lambda_1$; $x = \lambda_1$; $\frac{x}{y} = \frac{\lambda_1}{2\lambda_1} = \frac{1}{2}$\\
                 \item This gives us $y= 2x$ which is needed for this:\\
                 $\lambda_1 (200-2x-y) = 0$\\
                 $\lambda_1 (200 -2y) = 0$
@@ -202,7 +202,16 @@ Sunday, September 11th.
         \item What about $\lambda_{1},\lambda_{2}>0$? Given this information, find $x$, $y$, $\lambda_{1}$, and $\lambda_{2}$, and check whether (indeed) $\lambda_{1},\lambda_{2}>0$.
         
             \begin{enumerate}
-                \item If
+                \item If $\lambda_1, \lamda_2 > 0$\\
+                $200 - 2x - y = 0$\\
+                $300 -x -3y = 0$
+                \item $300 - 3y = x$
+                \item $\fbox{y = 80; x = 60}$
+                \item $60 = \lambda_1 + 3\lambda_2$\\
+                $80 = 2\lambda_1 + \lambda_2$
+                \item $20 + 2\lambda_2 = \lambda_1$\\
+                $40 = 5\lambda_2$
+                \item $\fbox{\lambda_2 = 8; \lambda_1 = 36}$
             \end{enumerate}
         
     \end{enumerate}
