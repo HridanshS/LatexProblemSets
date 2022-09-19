@@ -1,0 +1,194 @@
+%\documentclass[11pt]{article}
+%\usepackage{sw20jart}
+%\input{tcilatex}
+
+
+\documentclass[11pt]{article}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+%\definecolor{gray}{RGB}{192,192,192}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 3 Problem Set}\\
+\textit {Professor: Teddy kim};  
+Sunday, September 11th.
+\\Group 3: Hridansh Saraogi
+\end{center}
+
+\begin{enumerate}
+\item Solve the following constrained optimization problems by applying the Lagrangian method. For each problem, report not only the solution $(x_{1},x_{2})$, but also the corresponding Lagrangian multiplier $\lambda$.
+    \begin{enumerate}
+        \item $\max_{(x_{1},x_{2})\geq 0}(x_{1}+2)(x_{2}+3)$ subject to $2x_{1}+3x_{2}\leq 27$.
+        \begin{enumerate}
+                \item $L(x_1, x_2, \lambda) = (x_1 + 2) (x_2 + 3) + \lambda(27 - 2x_1 - 3x_2)$
+                \item First Order Operation\\
+                $\frac{\partial L}{\partial x_1} = x_2 + 3 -2\lambda$=0\\
+                $\frac{\partial L}{\partial x_2} = x_1 + 2 -3\lambda=0$
+                \item $\lambda \frac{\partial L}{\partial \lambda} = \lambda (27 -2x_1 -3x_2) = 0$
+                \item $\frac{x_1 + 2}{x_2 + 3} = \frac{3\lambda}{2\lambda}$\\
+                $3x_2 + 9 = 2x_1 + 4$\\
+                $3x_@ + 5 = 2x_1$\\
+                \fbox{$3x_2 = 2x_1 - 5$}
+                \item $2x_1 +3x_2 = 27$\\
+                $2x_1 +2x_1 - 5 = 27$
+                $4x_1 = 32$
+                \item $x_1 = 8$\\
+                $x_2 = \frac{11}{3}$
+                \item $\lambda = \frac{10}{3}$
+        \end{enumerate}
+
+        \item $\max_{(x_{1},x_{2})\geq 0}x_{1}+x_{2}$ subject to $2x_{1}^{2}+x_{2}^{2}\leq 54$.
+            \begin{enumerate}
+                \item $L(x_1, x_2, \lambda) = x_1 + x_2 + \lambda (54 - (2x_1)^2 - (x_2)^2$
+                \item First Order Operation\\
+                $\frac{\partial L}{\partial x_1} = 1 - 4x_1 \lambda = 0$\\
+                $\frac{\partial L}{\partial x_2} = 1 - 2x_2 \lambda = 0$
+                \item $\lambda \frac{\partial L}{\lambda} = \lambda (54-(2x_1)^2 - (x_2)^2 = 0$
+                \item $\frac{1}{4x_1} = \lambda$; $\frac{1}{2x_2}=\lambda$\\
+                $\frac{4x_1}{2x_2} = \frac{1}{1} \rightarrow \fbox{2x_1 = x_2}$
+                \item $(2x_1)^2 + 2(x_1)^2 \geq 54$\\
+                $6(x_1)^2 = 54$\\
+                $(x_1)^2 = 9  $
+                \item $\fbox {x_1 = 3; x_2 = 6; \lambda = \frac{1}{12}}$
+            \end{enumerate}
+
+    \end{enumerate}
+
+\item Victor will be taking two important tests next week, one in math and the other in econ. Victor knows that he has to devote his time and ``attention'' (energy, focus, etc) in order to do better in each test. Specifically, he can increase his math score $x$ by $1$ every time he spends $2$ hours and $1$ attention on math, while his econ score $y$ increases by $1$ every time he spends $1$ hour and $3$ attention units (as in reality, math is fairly labor-intensive, while econ requires focus, creativity, etc). Until the tests, Victor has only 200 hours and can spend only 300 attention units (i.e., this is the point at which he will become completely exhausted). His preferences over $(x,y)$ are given by $U(x,y)=xy$.
+    \begin{enumerate}
+        \item Victor's time and attention constraints can be mathematically formulated as follows:
+            \begin{equation*}
+                2x+y\leq 200\text{ and }x+3y\leq 300.
+            \end{equation*}
+        Provide an economic interpretation of each inequality (including what is the economic meaning of each term).\\
+        \textbf{Solution:}
+            \begin{enumerate}
+                \item The time Victor spends on improving his Math and Economics score should not exceed 200
+                \item The attention (in appropriate units) Victor spends on improving his math and Economics score should not exceed 300
+            \end{enumerate}
+
+        \item Victor's utility maximization problem is given by
+        \begin{equation*}
+            \max_{(x,y)}xy\text{ s.t. }2x+y\leq 200\text{ and }x+3y\leq 300.
+        \end{equation*}
+        Write down the Lagrangian function that corresponds to this problem, using $\lambda_{1}$ and $\lambda_{2}$ as Lagrangian multipliers for each inequality constraint, and take the first-order condition of the Lagrangian function.
+        
+        \begin{enumerate}
+            \item $L(x_1, x_2, \lambda_1, \lambda_2) = xy + \lambda_1(200-2x-y) + \lambda_2(300-x-3y)$
+            \item First Order Operation\\
+            $\frac{\partial L}{\partial x_1} = y - 2\lambda_1 - \lambda_2 = 0$
+            $\frac{\partial L}{\partial y} = x - \lambda_1 - 3\lambda_2 = 0$
+            \item $\lambda_1 \frac{\partial L}{\partial \lambda_1} = \lambda_1(200-2x-y) = 0$\\
+            $\lambda_2 \frac{\partial L}{\partial \lambda_2} = \lambda_2(300-x-3y) = 0$
+        \end{enumerate}
+
+        \item Is is possible that $\lambda_{1}=\lambda_{2}=0$ at Victor's optimal choice?
+
+            \begin{enumerate}
+                \item 
+            \end{enumerate}
+
+        \item What about $\lambda_{1}>0$ and $\lambda_{2}=0$? Given this information, find $x$, $y$, and $\lambda_{1}$---by solving the system of equations from the first-order condition---and check whether the solution satisfies the second constraint $x+3y\leq 300$.
+
+        \item What about $\lambda_{1},\lambda_{2}>0$? Given this information, find $x$, $y$, $\lambda_{1}$, and $\lambda_{2}$, and check whether (indeed) $\lambda_{1},\lambda_{2}>0$.
+    \end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
+
+
