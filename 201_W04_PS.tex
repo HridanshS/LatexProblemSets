@@ -1,0 +1,215 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+%\definecolor{gray}{RGB}{192,192,192}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 4 Problem Set}\\
+\textit {Professor: Teddy kim};  
+Sunday, September 25th.
+\\Group 3: Hridansh Saraogi and ZhenYan Li
+\end{center}
+
+\begin{enumerate}
+\item For each of the following statements, determine whether
+the statement is \emph{true} or \emph{false} (the latter including ``not necessarily true''), and provide a brief explanation.
+
+    \begin{enumerate}
+    \item If you always spends 10\% of your income to buy apples, then apples are a luxury good to you.
+    \begin{enumerate}
+        \item False. It is homothetic\\
+        The definition of luxury goods is that a consumer consumes proportionally more as her income rises. \item Thus, the consumption proportion of apples should not be fixed. It should be determined by the percentage change in income.
+    \end{enumerate}
+
+    \item It is impossible for all goods to be inferior goods.
+    \begin{enumerate}
+        \item False\\
+        When total income increases, consumption decreases.
+        \item If all goods are inferior then we are not maximizing our utility because we won’t spend all of our income.
+    \end{enumerate}
+
+    \item If a good is an inferior good, then an increase in its price will increase the demand for it.
+    \begin{enumerate}
+        \item False\\
+        If a good is a giffen good, then an increase in price increases the demand for it.
+        \item However, we know that giffen good is just a type of inferior good and not all goods are Giffen good.
+    \end{enumerate}
+
+    \item An increase in the price of a Giffen good makes the people who consume that good better off.
+    \begin{enumerate}
+        \item False
+        \item Any increase in price shrink the budget set
+    \end{enumerate}
+
+    \item If leisure is a normal good, then an increase in non-labor income will reduce labor supply.
+    \begin{enumerate}
+        \item True. If leisure is a normal good, and there is an increase in non-labor income, people will:\\ Reduce their working hours and this will reduce the supply of labor, causing the labor supply curve to shift to the left.
+    \end{enumerate}
+
+\end{enumerate}
+
+\item Suppose Bella's preferences for apples $(x_{1})$ and bananas $(x_{2})$ can be represented by the following utility function: $u(x_{1},x_{2})=x_{1}x_{2}^{2}$.
+    \begin{enumerate}
+        \item Derive Bella's demand function (as a function of $p_{1}$, $p_{2}$, and $m$).
+        \begin{enumerate}
+            \item Demand function:
+            \item Suppose $u(x_1, x_2) = x_1(x_2)^2$
+            \item Given $(p_1, p_2, m)$, the consumer's problem is:\\
+            $max_{(x_1, x_2)} x_1(x_2)^2$ subject to $p_1x_1 + p_2x_2 \leq m$
+            \item Arbitrage Method:\\
+            Budget constraint: $p_1x_1 + p_2x_2 \leq m$\\
+            Slope Condition: $MRS_{12} = \frac{MU_1}{MU_2} = \frac{x^2_2}{2x_1x_2} = \frac{x_2}{2x_1} = \frac{p_1}{p_2} \hspace{1cm} \rightarrow \hspace{1cm} 2p_1x_1 = p_2x_2$
+            \item Solving the above system of equations:\\
+            $x_1(p_1, p_2, m)=x_1^* = \frac{m}{3p_1}, x_2(p_1, p_2, m) = x_2^* = \frac{2m}{3p_2}$
+            \item Both are increasing in m, decreasing in own price, and independent of the other price.
+        \end{enumerate}
+
+        \item Compute Bella's income elasticity $\eta_{1}$ and price elasticity $\epsilon_{1}$ for apples.
+        \begin{enumerate}
+            \item Income elasticity: \\
+            Cobb-Douglas: $u(x_{1},x_{2}) = x_1(x_2)^2$
+            \item $x_1 = \frac{m}{3p_1} \hspace{1cm} \rightarrow \hspace{1cm} n_1 = \frac{\partial x_1}{\partial m} \frac{m}{x_1} = \frac{1}{3p_1} \frac{m}{\frac{m}{3p_1}} = 1$\\
+            Good $x_1$ is a homothetic group
+            \item Price Elasticity:\\
+            
+        \end{enumerate}
+
+        \item Suppose $p_{2}=2$ and $m=18$. If the price of apples decreases from $p_{1}=2$ to $p_{1}^{\prime}=1$, then how does Bella's demand for apples change?
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+        \item Compute how much is due to the substitution effect in (c).
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+    \end{enumerate}
+
+
+\item Ruohong likes to add 2 teaspoons of sugar $(x_{2})$ to each cup of coffee $(x_{1})$. Formally, her preferences for coffee and sugar can be represented by $u(x_{1},x_{2})=\min\{2x_{1},x_{2}\}$.
+
+    \begin{enumerate}
+        \item Derive Ruohong's demand function for coffee (as a function of $p_{1}$, $p_{2}$, and $m$).
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+        \item Compute Ruohong's income elasticity $\eta_{1}$ and price elasticity $\epsilon_{1}$ for apples. Is coffee a luxury, a necessity, or a homothetic good to Ruohong? Is Ruohong's demand for coffee elastic, inelastic, or unit-elastic?
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+        \item Suppose $p_{2}=2$ and $m=30$. If the price of coffee increases from $p_{1}=1$ to $p_{1}^{\prime}=2$, then how does Ruohong's demand for coffee?
+        \begin{enumerate}
+            \item Demand decreases from 6 to 5
+        \end{enumerate}
+
+        \item Compute how much is due to the substitution effect in (c).
+        \begin{enumerate}
+            \item The substitution effect is 0 because point B exists at the same tangent of the old indifference curve and the slope of the new budget line.
+        \end{enumerate}
+
+    \end{enumerate}
+
+
+
+\end{enumerate}
+
+\end{document}
+
+
