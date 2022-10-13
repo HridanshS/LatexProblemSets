@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 6 Problem Set}
+\end{center}
+
+\begin{enumerate}
+\item For each of the following statements, determine whether
+the statement is \emph{true} or \emph{false} (the latter including ``not necessarily true''), and provide a brief explanation.
+
+    \begin{enumerate}
+   	\item A risk-loving decision-maker always takes a risky bet.
+	
+	\item If two lotteries have the same expected value but different variances, then a risk-averse person always prefers the lottery with a higher variance.
+
+    \item If a risk-averse person is willing to take a risky investment, then a risk-neutral person with the same income is willing to take the same risky investment.
+
+    \item Lane is not risk averse. If he is offered a chance to pay \$10 for a lottery ticket that will give him a prize of \$100 with probability .06, a prize of \$50 with probability .1, and no prize with probability .84, then he will buy the ticket.
+
+    \end{enumerate}
+
+\item Qing just inherited a vineyard from a distant relative. In good years, she earns \$216 from the sale of grapes from the vineyard. If the weather is poor, she earns only \$27. Qing's estimate of the probability of good weather is $2/3$.
+	\begin{enumerate}
+	\item Compute the expected value and the variance of Qing's income from the vineyard.
+	
+	\item Qing is risk averse. William, a grape buyer, offers Qing a guaranteed payment of \$153 each year in exchange for her entire harvest. Will Qing accept the offer? Provide a brief explanation.
+	
+	\item Suppose that Qing's utility function is given by $u(v)=v^{1/3}$. Find the lowest guaranteed payment Qing would accept (in other words, the price at which Qing is indifferent between accepting and rejecting William's offer).
+    \end{enumerate}
+
+\item If you remain healthy, you expect to earn an income of \$160,000. If, by contrast, you become disabled, you will only be able to work part time, and your average income will drop to \$40,000. Suppose that you believe that there is a 5 percent chance that you could become disabled. Furthermore, your utility function is $\sqrt{I}$.
+    \begin{enumerate}
+    \item What is your expected income? What is your expected utility?
+
+    \item Consider an insurance policy that fully insures you in the event that you are disabled. What is the actuarially fair insurance premium? In other words, suppose that you pay $x$ for an insurance that gives you \$120,000 extra income when you become disabled. For what value of $x$ is the insurance actuarially fair?
+
+    \item What is the highest premium that you would be willing to pay for the full insurance policy?
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+
