@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 8 Problem Set}\\
+\textit {Professor: Teddy kim};  
+Sunday, October 23rd.
+\\Student name: Hridansh Saraogi
+\end{center}
+
+\begin{enumerate}
+\item For each of the following statements, determine whether
+the statement is \emph{true} or \emph{false} (the latter including ``not necessarily true''), and provide a brief explanation.
+    \begin{enumerate}
+        \item If a production function $f(x)$ with one input $x$ increases until $20$ and decreases thereafter, then the firm's marginal product is increasing if and only if $x<20$.
+
+        \item With the same production function in (a), the average product necessarily falls if $x>20$.
+
+         \item It a firms' average cost is decreasing at $y$ then its marginal cost is also decreasing at $y$.
+
+        \item If the marginal cost is decreasing until $10$ and then increasing, then the average cost is minimized at $x=10$.
+
+    \end{enumerate}
+
+\item For each of the following situations, find the cost-minimizing input bundle to produce $y=12$ and compute the resulting cost.
+    \begin{enumerate}
+        \item $f(x_{1},x_{2})=3x_{1}+4x_{2}$, $w_{1}=2$, $w_{2}=3$.
+
+        \item $f(x_{1},x_{2})=\min\{3x_{1},4x_{2}\}$, $w_{1}=2$, $w_{2}=3$.
+
+        \item $f(x_{1},x_{2})=x_{1}^{1/2}x_{2}^{1/2}$, $w_{1}=1$, $w_{2}=2$.
+
+        \item $f(x_{1},x_{2})=\sqrt{x_{1}}+\sqrt{x_{2}}$, $w_{1}=2$, $w_{2}=1$.
+    \end{enumerate}
+
+\item Suppose $f(x_{1},x_{2})=x_{1}^{2/3}x_{2}^{2/3}$, and $w_{1}=w_{2}=2$.
+    \begin{enumerate}
+        \item Suppose that in the short run, $x_{2}$ is fixed at $27$. In this case, the firm's production function effectively reduces to $g(x_{1})=f(x_{1},27)=9x_{1}^{2/3}$. Does this short-run production function exhibit constant, decreasing, or increasing returns to scale? Does your answer suggest the firm's short-run average variable cost to increase, decrease, or stay constant?
+
+        \item Derive the firm's short-run \emph{variable} cost function. Does the firm's (short-run) average variable cost increase, decrease, or stay constant?
+
+        \item In the long run (where $x_{2}$ is no longer fixed), does the firm's production function exhibit constant, decreasing, or increasing returns to scale? Does your answer suggest the firm's (long run) average cost to increase, decrease, or stay constant?
+
+        \item Derive the firm's long-run cost function (as a function of $w_{1}$, $w_{2}$, and $y$). Does the firm's (long-run) average cost increase, decrease, or stay constant?
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+
