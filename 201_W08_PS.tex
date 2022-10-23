@@ -148,22 +148,41 @@ the statement is \emph{true} or \emph{false} (the latter including ``not necessa
     \begin{enumerate}
         \item $f(x_{1},x_{2})=3x_{1}+4x_{2}$, $w_{1}=2$, $w_{2}=3$.
         \begin{enumerate}
-            \item 
+            \item MRTS$_{12} = \frac{MP_1}{MP_2} = \frac{4}{3}$\\
+            $\frac{w_1}{w_2}=\frac{2}{3}$
+            \item Since $\frac{4}{3} > \frac{2}{3}$, we need to increase $x_1$ in order to have $3x_1 = 12$
+            \item $\therefore x_1 = 4, x_2 = 0$. This gives us:\\
+            $c = w_1 * x_1 + w_2*x_2 = 2(4) = 8$
+            \item Hence, the cost-minimizing input bundle is (4,0) with cost 8
         \end{enumerate}
 
         \item $f(x_{1},x_{2})=\min\{3x_{1},4x_{2}\}$, $w_{1}=2$, $w_{2}=3$.
         \begin{enumerate}
-            \item 
+            \item $3x_1 = 4x_2 = 12$\\
+            $x_1 = 4$ and $x_2 = 3$
+            \item $c = w_1 * x_1 + w_2*x_2 = 2(4) + 3(3)$\\
+            c = 17
+            \item Hence, the cost-minimizing input bundle is (4,3) with cost 17
         \end{enumerate}
 
         \item $f(x_{1},x_{2})=x_{1}^{1/2}x_{2}^{1/2}$, $w_{1}=1$, $w_{2}=2$.
         \begin{enumerate}
-            \item 
+            \item $\sqrt{x_1}*\sqrt{x_2} = 12$
+            \item MRTS$_{12} = \frac{MP_1}{MP_2} = \frac{\frac{1}{2}*\frac{1}{\sqrt{x_1}}*\sqrt{x_2}}{\frac{1}{2}*\frac{1}{\sqrt{x_2}}*\sqrt{x_1}} = \frac{x_2}{x_1} = \frac{1}{2}$
+            \item $2x_2 = x_1$\\
+            $x_1 = 12\sqrt{2}$ and  $x_2 = 6\sqrt{2}$
+            \item Hence, the cost-minimizing input bundle is $(12\sqrt{2},6\sqrt{2})$ with cost $24\sqrt{2}$
         \end{enumerate}
 
         \item $f(x_{1},x_{2})=\sqrt{x_{1}}+\sqrt{x_{2}}$, $w_{1}=2$, $w_{2}=1$.
         \begin{enumerate}
-            \item 
+            \item $\sqrt{x_1}*\sqrt{x_2} = 12$
+            \item MRTS$_{12} = \frac{MP_1}{MP_2} = \frac{\frac{1}{2}*\frac{1}{\sqrt{x_1}}}{\frac{1}{2}*\frac{1}{\sqrt{x_2}}} = 2$
+            \item $x_2 = 4x_1$\\
+            $x_1 = 16$ and  $x_2 = 64$
+            \item $c = w_1 * x_1 + w_2*x_2 = 16(2) + 64(1)$\\
+            c = 96
+            
         \end{enumerate}
     \end{enumerate}
 
