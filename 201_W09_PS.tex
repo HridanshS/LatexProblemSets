@@ -1,0 +1,181 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 9 Problem Set}\\
+\textit {Professor: Teddy kim};  
+Sunday, October 30th.
+\\Student name: Hridansh Saraogi
+\end{center}
+
+
+\begin{enumerate}
+\item For each of the following statements, determine whether
+the statement is \emph{true} or \emph{false} (the latter including ``not necessarily true''), and provide a brief explanation.
+    \begin{enumerate}
+
+    \item Cost minimization is not a necessary condition for profit maximization; that is, even if a firm fails to minimize its production cost, it can still maximize its profit.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item Suppose a firm's production function with one factor $x$ is given by $f(x)=305x-2x^{2}$. If the price of its output is $p=2$ and the price of its factor is $w=10$ then the firm should use $75$ units of $x$.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item In the short run, a firm may produce a positive quantity even if its overall profit is negative.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item For a market to be perfectly competitive, different firms must sell sufficiently differentiated products.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item The cheese business in Lake Fon-du-lac, Wisconsin, is a competitive industry. All cheese manufacturers have the cost function $c(q)=q^{2}+16$, while demand for cheese in the town is given by $D(p)=120-p$. The long-run equilibrium number of firms in this industry will be 28.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \end{enumerate}
+
+\item Suppose $f(x_{1},x_{2})=\min\{\sqrt{x_{1}},\sqrt{x_{2}}\}$, $w_{1}=2$, and $w_{2}=3$.
+    \begin{enumerate}
+        \item Does this function exhibit constant, decreasing, or increasing returns to scale?
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+        \item In the short run, $x_{2}$ is fixed at $100$. Find this firm's short-run cost function $sc(y)$ and output supply function $y(p)$. Note that this firm cannot produce more than $10$ (because $f(x_{1},100)=\min\{\sqrt{x_{1}},\sqrt{100}\}\leq 10$), so effectively $c(y)=\infty$ if $y>10$.
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+        \item Find this firm's long-run cost function $lc(y)$ and output supply function $y(p)$.
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+    \end{enumerate}
+
+\item Consider the following perfectly competitive market: each firm's long-run cost function is given by $C(q)=72+8q+\frac{q^{2}}{2}$ (for $q>0$), and market demand is given by $D(p)=400-2p$.
+    \begin{enumerate}
+    \item How much would each individual firm produce in the long-run competitive equilibrium?
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item Find the long-run competitive equilibrium price in this industry.
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \item How many firms will operate in this industry in the long run?
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
+
