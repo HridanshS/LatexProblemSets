@@ -209,7 +209,22 @@ the statement is \emph{true} or \emph{false} (the latter including ``not necessa
 \end{center}
     \end{figure}
     \begin{enumerate}
-        \item 
+        \item Pure Strategy:\\
+        (Action, Action) and (Art, Art)
+        \item Mixed Strategy:
+        \begin{enumerate}
+            \item For P1, $u_2(Action) = u_2(Art)$
+            \item q = 3(1-q)\\
+            q = 0.75\\
+            $1 - q = 0.25$
+            \item For P2, $u_1(Action) = u_1(Art)$\\
+            $3p = 1 - p$\\
+            $\therefore p = 0.25$\\
+            $1 - q = 0.75$
+            \item Hence, the mixed Nash Equilibriums are (0.25, 0.75) and (0.75, 0.25)
+        \end{enumerate}
+        
+        
     \end{enumerate}
 
     \item Game of Chicken:
@@ -232,7 +247,20 @@ the statement is \emph{true} or \emph{false} (the latter including ``not necessa
 \end{center}
     \end{figure}
     \begin{enumerate}
-        \item 
+        \item Pure Strategy:\\
+        (N, S) and (S, N)
+        \item Mixed Strategy:
+        \begin{enumerate}
+            \item For P1, $u_2(S) = u_2(N)$
+            \item $10q +100q - 100  = 0$\\
+            $q = \frac{10}{11}$\\
+            $\therefore 1 - q = \frac{1}{11}$
+            \item For P2, $u_1(S) = u_1(N)$
+            \item $10p - 10(1-p)$\\
+            $p = 0.5$\\
+            $\therefore 1-p = 0.5$
+            \item Hence, the mixed Nash Equilibriums are $(0.5, 0.5)$ and $(\frac{10}{11}, \frac{1}{11})$
+        \end{enumerate}
     \end{enumerate}
 
 	\end{enumerate}
@@ -275,18 +303,23 @@ the statement is \emph{true} or \emph{false} (the latter including ``not necessa
 	\begin{enumerate}
 	\item Show that (In, Acquiesce) is a Nash equilibrium of this game.
 	\begin{enumerate}
-        \item 
+        \item If P1 decides to stay out of the market, they get only 1. In the best case scenario of being in the market, the player can get 2
+        \item Given that P1 enters the market, P2 gets to decide between 0 and 1 payoff. Due to this, they will choose taking 1 as the payoff
+        \item Due to the fact that they will get the better payoff based on their remaining options (after the other player chooses), neither P1 nor P2 want differently and hence (In, Acquiesce) is a Nash equilibrium of this game
     \end{enumerate}
 	
 	\item Show that (Out, Fight) is also a Nash equilibrium of this game.
 	\begin{enumerate}
-        \item 
+        \item We see that P1 is out of the game initially, if they attempt to enter, it is in P2's best interest to fight and hence P1 will get 0 instead of 1
+        \item For P2, the choice becomes irrelevant and they will always then get 2
+        \item Therefore, (Out, Fight) is a Nash Equilibrium of the game
     \end{enumerate}
 	
 
 	\item Show that (Out, Fight) is not a subgame perfect Nash equilibrium.
 	\begin{enumerate}
-        \item 
+        \item As seen in a), (In, Acquiesce) is the most sensible Nash Equilibrium of the game
+        \item In the case of (Out, Fight), it is dependent on P1 not being a credible threat. Further, if P1 chooses to be 'In' the market, P2 would always prefer to Acquiesce since it will get 1 instead of 0
     \end{enumerate}
 	\end{enumerate}
 
