@@ -1,0 +1,168 @@
+\documentclass[11pt]{article}
+
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage[left=2.5cm,top=2.8cm,right=2.5cm,bottom=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{version}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta,decorations,decorations.pathreplacing,calc,matrix}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\definecolor{lightgrey}{rgb}{.7,.7,.7}
+
+\definecolor{clemson-orange}{RGB}{234,106,32}
+\definecolor{chicago-maroon}{RGB}{128,0,0}
+\definecolor{northwestern-purple}{RGB}{82,0,99}
+\definecolor{cornell-red}{RGB}{179,27,27}
+\definecolor{sauder-green}{RGB}{171,180,0}
+\definecolor{lawngreen}{RGB}{0,250,154}
+
+\setcounter{MaxMatrixCols}{10}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+{\theorembodyfont{\normalfont}
+\newtheorem{remark}{Remark}
+}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\hfill \rule{0.5em}{0.5em} \bigskip}
+\newenvironment{soln}[1][Soln]{\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+\renewcommand{\cite}{\citeasnoun}
+\renewcommand{\theenumii}{(\alph{enumii})}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii.}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{assumption}{Assumption}{Assumptions}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\crefname{claim}{Claim}{Claims}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{figure}{Figure}{Figures}
+\crefname{remark}{Remark}{Remarks}
+\crefname{section}{Section}{Sections}
+\crefname{procedure}{Procedure}{Procedures}
+\crefname{example}{Example}{Examples}
+\crefname{definition}{Definition}{Definitions}
+\crefname{table}{Table}{Tables}
+\crefname{align}{}{}
+\crefname{enumi}{}{}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{step}{Step}{Steps}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{footnote}{Footnote}{Footnotes}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{ECON 201 Week 15 Problem Set}\\
+Due on \underline{Saturday, December 10th.}
+\\
+\textit {Professor: Teddy kim};  
+Saturday, December 10th.
+\\Student name: Hridansh Saraogi
+
+\end{center}
+
+\begin{enumerate}
+\item For each of the following statements, determine whether
+the statement is \emph{true} or \emph{false} (the latter including ``not necessarily true''), and provide a brief explanation.
+    \begin{enumerate}
+    \item In a duopoly (2-firm oligopoly), if you can choose to be either a Cournot competitor or a Stackelberg leader, you will always choose to be a Stackelberg leader.
+	
+	\item Two firms in an oligopoly can always do better if one firm buys the other or they form a cartel.
+	
+	\item Bertrand price competitors can recover some market power and make positive profits when they differentiate their products.
+	
+	\item If there are only two firms in a market, then the market outcome cannot be efficient.
+	\end{enumerate}
+
+\item There are two firms selling an identical product, one with constant marginal cost $MC_{1}=2$ and the other with constant marginal cost $MC_{2}=4$. The inverse demand curve for the industry is given by $p=36-2(q_{1}+q_{2})$.
+    \begin{enumerate}
+        \item Derive firm 1's best response $r_{1}(q_{2})$ to firm 2's quantity $q_{2}$.
+
+        \item Derive firm 2's best response $r_{2}(q_{1})$ to firm 1's quantity $q_{1}$.
+
+        \item Find the Cournot (Nash) equilibrium for this market, and compute each firm's equilibrium profit.
+
+        \item Find the Stackelberg equilibrium outcome (each firm's output and the resulting price) when firm 1 is the Stackelberg leader.
+
+        \item Find the Stackelberg equilibrium outcome (each firm's output and the resulting price) when firm 2 is the Stackelberg leader.
+    \end{enumerate}
+
+\item Suppose there are $3$ firms, each with cost function $c(q)=q$ (so each firm's marginal cost is always $1$), and the inverse demand curve is given by $p=13-(q_{1}+q_{2}+q_{3})$.
+    \begin{enumerate}
+        \item Find firm 1's best response $r_{1}(q_{2},q_{3})$ to the other firms' quantities, $(q_{2},q_{3})$.
+
+        \item Find the Cournot equilibrium of this industry. (You can use the fact that all firms are symmetric and so will produce the same quantity under Cournot competition.)
+
+        \item Now suppose firm 1 chooses its quantity $q_{1}$ first, and the other firms choose their quantity after observing $q_{1}$.
+            \begin{enumerate}
+                \item Given $q_{1}$, firms 2 and 3 engage in standard Cournot competition. Find the Cournot equilibrium of that \emph{subgame}. It suffices to consider $q_{1}<12$.
+
+                \item Using the result in i (which can be represented by $q_{2}(q_{1})$ and $q_{3}(q_{1})$), find firm 1's optimal quantity, $q_{1}^{\ast}$. This problem is effectively identical to that of Stackelberg equilibrium. The only difference is that now there are two followers, not just one.
+
+                \item Determine the equilibrium price, and compute each firm's equilibrium profit.
+                \end{enumerate}
+    \end{enumerate}
+
+\item Suppose that two firms, firm 1 and firm 2, engage in Bertrand competition for differentiated products, each with zero marginal cost. The demand curve for each firm is given as follows:
+	\begin{equation*}
+	D_{1}(p_{1},p_{2})=30-2p_{1}+p_{2}\text{ and }D_{2}(p_{1},p_{2})=50-3p_{2}+p_{1}.
+	\end{equation*}
+	\begin{enumerate}
+	\item Derive firm 1's best-response function $p_{1}=r_{1}(p_{2})$ to firm 2's price $p_{2}$.
+
+    \item Derive firm 2's best-response function $p_{2}=r_{2}(p_{1})$ to firm 1's price $p_{1}$.
+
+	\item Find the Bertrand equilibrium in this market and calculate each firm's profit.
+
+	\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+
